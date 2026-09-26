@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.weather {
+    width: 30%;
+    height: 60%;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 1s ease-in-out 0s;
+}
+
+.weather:hover{
+    transform: scale(1.05);
+}
+
+.searchBar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.searchBar input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.searchBar button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.searchBar button:hover {
+    background-color: rgb(26, 26, 26);
+    transform: translateY(-2px);
+}
+
+#weatherCard {
+    color: white;
+    background-color: rgba(57, 183, 211, 0.278);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#cityName {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#temperature {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+#weatherCard p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+#error {
+    color: #ffdddd;
+    margin-top: 15px;
+    font-weight: bold;
+}
